@@ -2,7 +2,7 @@
 # Check to see if a user-input of 3 lengths could make a triangle.
 
 def is_triangle(a,b,c):
-  if (a+b>c) or (a+c>b) or (b+c>a):
+  if (a>b+c) or (b>a+c) or (c>a+b):
     print("No.")
   elif a+b==c or a+c==b or b+c==a:
     print("Degenerate. (Yes.)")
